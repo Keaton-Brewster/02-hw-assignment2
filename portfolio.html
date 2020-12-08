@@ -11,50 +11,53 @@
     <title>Keaton Brewster - Portfolio</title>
     <link rel='icon' href='/images/k.png' type='image/x-icon' />
 </head>
-<!--NAVIGATION BAR WITH RESPONISVE LINKS-->
-<header class="navbar navbar-expand bg-dark position-sticky fixed-top">
-    <div class="page-header">
-        <!--D CLASS ADJUSTED TO CHANGE FONT SIZE DEPENDING ON SCREEN SIZE-->
-        <h2 class="text-light d-none d-md-block">
-            KEATON BREWSTER
-        </h2>
-        <h4 class="text-light d-sm-block d-md-none">
-            KEATON BREWSTER
-        </h4>
-    </div>
-    <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
-    <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
-        <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary" role="button">Contact</a>
-        </li>
-        <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
-                aria-pressed="true">Portfolio</a>
-        </li>
-        <li class="list-inline-item"><a href="index.html" class="btn btn-outline-secondary" role="button">About</a></li>
-        <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
-    </ul>
-    <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
-    <div class="ml-auto d-md-block d-lg-none">
-        <ul class="navbar-nav m-auto">
-            <li class="nav-item dropdown">
-                <button class="btn nav-item nav-link btn-transparent text-secondary" id="navbarDropdown"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a href="contact.html" class="text-secondary dropdown-item">Contact</a>
-                    <a href="#" class="text-dark dropdown-item">Portfolio</a>
-                    <a href="index.html" class="text-secondary dropdown-item">About</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</header>
 
 <body>
+
+    <!--NAVIGATION BAR WITH RESPONISVE LINKS-->
+    <header class="navbar navbar-expand bg-dark sticky-top">
+        <div class="page-header">
+            <!--D CLASS ADJUSTED TO CHANGE FONT SIZE DEPENDING ON SCREEN SIZE-->
+            <h2 class="text-light d-none d-md-block">
+                KEATON BREWSTER
+            </h2>
+            <h4 class="text-light d-sm-block d-md-none">
+                KEATON BREWSTER
+            </h4>
+        </div>
+        <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
+        <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
+            <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
+                    role="button">Contact</a>
+            </li>
+            <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
+                    aria-pressed="true">Portfolio</a>
+            </li>
+            <li class="list-inline-item"><a href="index.html" class="btn btn-outline-secondary" role="button">About</a>
+            </li>
+            <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
+        </ul>
+        <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
+        <div class="ml-auto d-md-block d-lg-none">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item dropdown">
+                    <button class="btn nav-item nav-link btn-transparent text-secondary" id="navbarDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a href="contact.html" class="text-secondary dropdown-item">Contact</a>
+                        <a href="#" class="text-dark dropdown-item">Portfolio</a>
+                        <a href="index.html" class="text-secondary dropdown-item">About</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <main class="m-4">
         <div class="container-xs">
@@ -97,10 +100,15 @@
 
     </main>
 
-</body>
-<footer>
+    <footer class="navbar bg-dark fixed-bottom">
+        <small class="text-muted m-auto">
+            &#169;KeatonBrewster
+        </small>
+    </footer>
 
-</footer>
+</body>
+
+
 
 <!--BOOTSTRAP 4.5.3 SCRIPT. LOADED AT THE BOTTOM TO IMPROVE USE EXPERIENCE-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
