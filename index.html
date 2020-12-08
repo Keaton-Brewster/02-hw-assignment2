@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS AND SCRIPT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
     <title>Keaton Brewster - About me</title>
     <link rel='icon' href='/images/k.png' type='image/x-icon' />
 </head>
@@ -24,18 +25,21 @@
         </h4>
     </div>
     <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
-    <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
-        <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary" role="button">Contact</a>
-        </li>
-        <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
-                role="button">Portfolio</a>
-        </li>
-        <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
-                aria-pressed="true">About</a></li>
-        <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
-    </ul>
+    <div role="navigation">
+        <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
+            <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
+                    role="button">Contact</a>
+            </li>
+            <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
+                    role="button">Portfolio</a>
+            </li>
+            <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
+                    aria-pressed="true">About</a></li>
+            <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
+        </ul>
+    </div>
     <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
-    <div class="ml-auto d-md-block d-lg-none">
+    <div class="d-md-block d-lg-none">
         <ul class="navbar-nav m-auto">
             <li class="nav-item dropdown">
                 <button class="btn nav-item nav-link text-secondary" id="navbarDropdown" data-toggle="dropdown"
