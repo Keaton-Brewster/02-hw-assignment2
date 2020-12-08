@@ -16,29 +16,32 @@
 
     <!--NAVIGATION BAR WITH RESPONISVE LINKS-->
     <header class="navbar navbar-expand bg-dark sticky-top">
-        <div class="page-header">
+        <brand class="page-header">
             <!--D CLASS ADJUSTED TO CHANGE FONT SIZE DEPENDING ON SCREEN SIZE-->
-            <h2 class="text-light d-none d-md-block">
-                KEATON BREWSTER
+            <h2 class="text-light font-italic d-none d-md-block">
+                Keaton<span class="text-muted">Brewster</span>
             </h2>
-            <h4 class="text-light d-sm-block d-md-none">
-                KEATON BREWSTER
+            <h4 class="text-light font-italic d-sm-block d-md-none">
+                Keaton<span class="text-muted">Brewster</span>
             </h4>
-        </div>
+        </brand>
         <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
-        <ul class="nav ml-auto d-none d-lg-block">
-            <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
-                    role="button">Contact</a>
-            </li>
-            <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
-                    aria-pressed="true">Portfolio</a>
-            </li>
-            <li class="list-inline-item"><a href="index.html" class="btn btn-outline-secondary" role="button">About</a>
-            </li>
-            <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
-        </ul>
+        <nav class="ml-auto d-none d-lg-block">
+            <ul class="nav">
+                <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
+                        role="button">Contact</a>
+                </li>
+                <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
+                        aria-pressed="true">Portfolio</a>
+                </li>
+                <li class="list-inline-item"><a href="index.html" class="btn btn-outline-secondary"
+                        role="button">About</a>
+                </li>
+                <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
+            </ul>
+        </nav>
         <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
-        <div class="ml-auto d-md-block d-lg-none">
+        <nav class="ml-auto d-md-block d-lg-none">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item dropdown">
                     <button class="btn nav-item nav-link btn-transparent text-secondary" id="navbarDropdown"
@@ -56,7 +59,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main class="m-4">
@@ -106,6 +109,7 @@
                 </div>
             </div>
         </div>
+        <!--END OF SECTION FORMATTED FOR <XL SCREENS-->
         <!--THIS SECTION WILL REFORMAT THE IMAGE GRIP FOR XL SCREENS-->
         <div class="container-fluid d-none d-xl-block">
             <!--CONTAINER-XS MAKES THE CONTENT FILL THE ENTIRE WIDTH OF THE SCREEN ON MOBILE, WHILE RETAINING SPACING FOR BROWSERS-->
@@ -146,6 +150,7 @@
                 </div>
             </div>
         </div>
+        <!--END OF SECTION FORMATTED FOR XL SCREENS-->
 
     </main>
 

@@ -16,29 +16,31 @@
 
     <!--NAVIGATION BAR WITH RESPONISVE LINKS-->
     <header class="navbar navbar-expand bg-dark sticky-top">
-        <div class="page-header">
+        <brand class="page-header">
             <!--D CLASS ADJUSTED TO CHANGE FONT SIZE DEPENDING ON SCREEN SIZE-->
-            <h2 class="text-light d-none d-md-block">
-                KEATON BREWSTER
+            <h2 class="text-light font-italic d-none d-md-block">
+                Keaton<span class="text-muted">Brewster</span>
             </h2>
-            <h4 class="text-light d-sm-block d-md-none">
-                KEATON BREWSTER
+            <h4 class="text-light font-italic d-sm-block d-md-none">
+                Keaton<span class="text-muted">Brewster</span>
             </h4>
-        </div>
+        </brand>
         <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
-        <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
-            <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
-                    role="button">Contact</a>
-            </li>
-            <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
-                    role="button">Portfolio</a>
-            </li>
-            <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
-                    aria-pressed="true">About</a></li>
-            <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
-        </ul>
+        <nav class="ml-auto d-none d-lg-block">
+            <ul class="nav">
+                <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
+                        role="button">Contact</a>
+                </li>
+                <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
+                        role="button">Portfolio</a>
+                </li>
+                <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
+                        aria-pressed="true">About</a></li>
+                <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
+            </ul>
+        </nav>
         <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
-        <div class="ml-auto d-md-block d-lg-none">
+        <nav class="ml-auto d-md-block d-lg-none">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item dropdown">
                     <button class="btn nav-item nav-link text-secondary" id="navbarDropdown" data-toggle="dropdown"
@@ -56,7 +58,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main class="m-4 container-xs">
@@ -68,8 +70,9 @@
                 </h2>
                 <hr>
                 <img width="250px" class="float-left mr-2 img-fluid"
-                    src="https://www.thespruce.com/thmb/_8FeeXcOc-qPfv7FUUHx-E2fmCU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1146102607-b3491a355af94171aa8ac7b0aeec0616.jpg">
-                <p>
+                    src="https://www.thespruce.com/thmb/_8FeeXcOc-qPfv7FUUHx-E2fmCU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1146102607-b3491a355af94171aa8ac7b0aeec0616.jpg"
+                    alt="Picture of a duck" />
+                <article>
                     I am a duck
                     <br>
                     <br>
@@ -88,7 +91,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <hr>
                     I dont know what else you want to know. Ducks don't really do much outside the field of philosophy
-                </p>
+                </article>
             </div>
         </div>
 
