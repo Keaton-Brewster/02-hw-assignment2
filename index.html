@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP CSS AND SCRIPT -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
 
     <title>Keaton Brewster - About me</title>
@@ -25,21 +32,18 @@
         </h4>
     </div>
     <!-- THIS LIST SHOWS UP ON LG+ SCREENS, AND HIDES ON ANTHING MEDIUM OR SMALLER. -->
-    <div role="navigation">
-        <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
-            <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary"
-                    role="button">Contact</a>
-            </li>
-            <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
-                    role="button">Portfolio</a>
-            </li>
-            <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
-                    aria-pressed="true">About</a></li>
-            <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
-        </ul>
-    </div>
+    <ul class="nav ml-auto d-none d-sm-none d-md-none d-lg-block">
+        <li class="list-inline-item"><a href="contact.html" class="btn btn-outline-secondary" role="button">Contact</a>
+        </li>
+        <li class="list-inline-item"><a href="portfolio.html" class="btn btn-outline-secondary"
+                role="button">Portfolio</a>
+        </li>
+        <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary active" role="button"
+                aria-pressed="true">About</a></li>
+        <!--ARIA-PRESSED AND .ACTIVE MAKE THE BUTTON APPEAR PRESSED AT ALL TIMES, TO LET THE USER KNOW THEYRE IN THAT SECTION-->
+    </ul>
     <!-- THIS DROPDOWN WILL APPEAR ON MEDIUM OR SMALLER SCREENS, AND BE HIDDEN ON ANYTING LARGER. -->
-    <div class="d-md-block d-lg-none">
+    <div class="ml-auto d-md-block d-lg-none">
         <ul class="navbar-nav m-auto">
             <li class="nav-item dropdown">
                 <button class="btn nav-item nav-link text-secondary" id="navbarDropdown" data-toggle="dropdown"
@@ -62,31 +66,38 @@
 
 <body>
 
-    <main class="row my-5 mx-1 container">
-        <div class="pt-3 col-14 bg-light container-fluid">
-            <h2 class="text-info">
-                About Me
-            </h2>
-            <hr>
-            <img width="250px" class="float-left mb-2 mr-2 img-fluid"
-                src="https://www.thespruce.com/thmb/_8FeeXcOc-qPfv7FUUHx-E2fmCU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1146102607-b3491a355af94171aa8ac7b0aeec0616.jpg">
-            <p>
-                I am a duck
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <main class="m-4 container-xs">
+        <div class="row">
+            <div class="pt-3 col-sm-9 bg-light">
+                <h2 class="text-info">
+                    About Me
+                </h2>
                 <hr>
-                I dont know what else you want to know. Ducks don't really do much outside the field of philosophy
-            </p>
+                <img width="250px" class="float-left mb-2 mr-2 img-fluid"
+                    src="https://www.thespruce.com/thmb/_8FeeXcOc-qPfv7FUUHx-E2fmCU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1146102607-b3491a355af94171aa8ac7b0aeec0616.jpg">
+                <p>
+                    I am a duck
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <hr>
+                    I dont know what else you want to know. Ducks don't really do much outside the field of philosophy
+                </p>
+            </div>
         </div>
-        <div class="col-sm"></div>
+
     </main>
 
 </body>
