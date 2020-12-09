@@ -14,6 +14,7 @@ build, from scratch, an online portfolio under the following criteria:
 * Designed solely with the use of Bootstrap (no personal CSS)
 
 The entire site is built with HTML, and all styling is done with the use of Bootstrap CSS and Script.
+I also took some liberties with other design aspects, and added some things that I liked (all with the use of Bootstrap)
 
 
 View deployed version here: https://keaton-brewster.github.io/02-hw-assignment2/
