@@ -1,7 +1,7 @@
 02-hw-assignment2
 ===========
-### Homework assignment #2
-Assignment is to build, from scratch, an online portfolio following the criteria:
+### Homework assignment #2:
+build, from scratch, an online portfolio under the following criteria:
 
 * Responsive
 * Semantic HTML
